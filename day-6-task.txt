@@ -1,0 +1,141 @@
+OOPS CONCEPT
+
+1)
+class Movie {
+    constructor(title= '', studio = '', rating = 'PG') {
+       this.title = title;
+       this.studio = studio;
+       this.rating = rating;
+    }
+ 
+    getPG(movies = [], rating = '') {
+       return movies.filter((m) => m.rating === rating);
+    }
+}
+ 
+
+const casionRoyaleMovie = new Movie('Casino Royale', 'Eon Productions', 'PG13');
+const leo = new Movie('Leo', 'LCU', 'PG');
+const vikram = new Movie('Vikram', 'Vijay', 'PG');
+const avatar = new Movie('Avatar: The water way', 'EROS', 'PG13');
+const avengers = new Movie('The avengers: End Game', 'LCU', 'PG');
+ const kgf=new Movie('kgf','usp','R');
+ const vtv=new Movie('vtv','abc','R')
+const moviesArray = [casionRoyaleMovie, leo, vikram, avatar, avengers,kgf,vtv];
+
+console.log(casionRoyaleMovie.getPG(moviesArray, 'R'));
+console.log(casionRoyaleMovie.getPG(moviesArray, 'PG'));
+ 
+
+2) 
+class circle{
+    constructor(radius,color) {
+       
+       this.radius= radius;
+       this.color=color;
+       
+     }
+     
+   input(){
+   return circle
+   }
+     
+     
+    output(){
+    return this.radius
+    }
+    result(){
+    return this.radius,this.color;
+    }
+    getRadius(){
+    return this.radius
+    }
+    
+    setRadius(radius){
+    return radius
+    }
+    getColor(){
+    return this.color
+    }
+    
+    setColor(color){
+    return color
+    }
+    getArea(){
+    return Math.PI*(Math.pow(this.radius,2))
+    }
+    getCircumference(){
+    return 2* Math.PI*this.radius
+    }
+    toString(){
+    return "Circle[radius=" + this.radius + "," + "color=" + this.color + "]"
+    }
+      
+
+}
+ 
+var maths = new circle (1.0,"red");
+console.log(maths.input());
+console.log(maths.output());
+ console.log(maths.result());
+ console.log(maths.getRadius());
+ console.log(maths.setRadius(4));
+ console.log(maths.setColor("pink"));
+console.log(maths.getArea());
+console.log(maths.getCircumference());
+console.log(maths.toString());
+
+
+
+
+3)
+class person {
+    constructor(name, qualification, company , experince, designation,salary) {
+       
+       this.name = name;
+       this.qualification = qualification;
+       this.company  = company;
+       this.experince = experince;
+       this.designation=designation ;
+       this.salary=salary ;
+	   }
+}     
+var person1 = new person('sangeetha', 'msc', 'hcl', 10, 'fullstackdeveloper',30000);
+var person2= new person('manoj', 'BE', 'tcs', 15, 'system lead',50000 );
+ console.log(person1);
+ console.log(person2);
+ 
+
+
+ 
+4)	 	 
+	 class uber_calc {
+    constructor(name, number, carseats, availability, renttype,facilities,price) {
+       // DEFINING PROPERTIES
+       this.name = name;
+       this.number =number;
+       this.carseats=carseats;
+       this.availability = availability;
+       this.renttype = renttype;
+       this.facilities=facilities ;
+       this.price=price
+     }
+     
+     billAmount(km) {
+        return km*this.price;
+     }    
+
+}
+ 
+var nissan = new uber_calc('nissan', 'tn_2344', 5, true, 'hours','ac',500);
+var ecosports = new uber_calc ('ecosports', 'tn_5667', 5, true, 'day','non_ac',200);
+ 
+console.log(nissan);
+console.log(ecosports);
+console.log(nissan.billAmount(10));
+console.log(ecosports.billAmount(20));
+
+
+ 
+	 
+	 
